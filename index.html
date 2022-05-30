@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <link rel="stylesheet" href="./main.css" />
+    <script defer src="./App.js"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-ctn">
+                <h1 id="logo">TODO</h1>
+            </div>
+            <div class="theme-btn-ctn">
+                <button class="toggle-theme">
+            <span class="moon-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                <path
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                  d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
+                />
+              </svg>
+            </span>
+            <span class="sun-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                <path
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                  d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"
+                />
+              </svg>
+            </span>
+          </button>
+            </div>
+        </header>
+
+        <main>
+            <div class="form-ctn">
+                <form action="#" id="form">
+                    <div class="checkbox-btn-ctn">
+                        <label for="checkbox-input"><input id="checkbox-input" type="checkbox" name="Task-status"
+              /></label>
+                    </div>
+                    <div class="text-input-ctn">
+                        <label>
+                <input
+                  id="task-input"
+                  type="text"
+                  name="Task-name"
+                  placeholder="Enter a new todo ..."
+                />
+              </label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tasks-ctn">
+                <!-- <div class="task-ctn" data-index="0">
+                    <div class="checkbox-btn-ctn">
+                        <label class="check-label" for=""><input type="checkbox" name="task-status" /></label>
+                    </div>
+                    <div class="task">
+                        <p class="task-text">Complete the TODO app</p>
+                    </div>
+                    <div class="delete-btn-ctn">
+                        <img src="./images/icon-cross.svg" alt="task delete btn" />
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="tasks-action-ctn">
+                <span><span class="task-count">6</span> items left</span>
+                <ul>
+                    <li>
+                        <button class="all">All</button>
+                    </li>
+                    <li>
+                        <button class="active">Active</button>
+                    </li>
+                    <li>
+                        <button class="completed">Completed</button>
+                    </li>
+                </ul>
+                <span class="clear">Clear Completed</span>
+            </div>
+
+            <div class="tasks-action-ctn--mobile">
+                <ul>
+                    <li>
+                        <button class="all">All</button>
+                    </li>
+                    <li>
+                        <button class="active">Active</button>
+                    </li>
+                    <li>
+                        <button class="completed">Completed</button>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <span>Drag and drop to reorder list</span>
+        </footer>
+    </div>
+
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+      >. Coded by <a href="#">Rohit gour</a>.
+    </div>
+</body>
+
+</html>
